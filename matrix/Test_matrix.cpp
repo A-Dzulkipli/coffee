@@ -50,3 +50,20 @@ bool test_get_2() {
         return true;
     }
 }
+
+bool test_constructor_1() {
+    try {
+        Matrix m = Matrix(
+            {
+                {1,2},
+                {3,4}
+            }
+        );
+
+        return true;
+    }
+
+    catch(std::invalid_argument& error) {
+        return false;
+    }
+}

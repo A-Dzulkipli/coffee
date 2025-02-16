@@ -9,10 +9,12 @@ private:
     int d_2;
     std::vector<std::vector<float>> mat;
     void bound_check(int d_1, int d_2);
+    void constructor_bound_check(int d_1, int d_2);
 
 public:
 
     Matrix(int d_1, int d_2);
+    Matrix(std::vector<std::vector<float>> mat);
     float get(int d_1, int d_2);
     int set(int d_1, int d_2, float n);
 
